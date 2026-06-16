@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-on-background font-sans overflow-x-hidden;
+  }
+
+  * {
+    @apply box-border;
+  }
+}
+
+@layer components {
+  .btn-ember {
+    @apply bg-ember text-on-background font-sans font-bold text-label uppercase
+           tracking-widest px-8 py-4 inline-block cursor-pointer border-none
+           shadow-hard-sm transition-all duration-150 ease-in-out
+           hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-hard-md
+           active:translate-x-0.5 active:translate-y-0.5 active:shadow-hard-none;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-on-primary font-sans font-semibold text-label uppercase
+           tracking-widest px-md py-sm inline-block cursor-pointer border-none
+           transition-colors duration-150
+           hover:bg-secondary-container hover:text-primary;
+  }
+
+  .section-divider {
+    @apply w-full bg-primary h-1;
+  }
+
+  .section-rule {
+    @apply w-full h-0.5 bg-primary;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    user-select: none;
+  }
+}
+
+@layer utilities {
+  .reveal-on-scroll {
+    @apply opacity-0 translate-y-6 transition-all duration-500 ease-out;
+  }
+
+  .reveal-on-scroll.visible {
+    @apply opacity-100 translate-y-0;
+  }
+}
