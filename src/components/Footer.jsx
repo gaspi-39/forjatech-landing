@@ -4,7 +4,7 @@ import LegalModal from './legal/LegalModal'
 const YEAR = new Date().getFullYear()
 
 const CONNECT_LINKS = [
-  { label: 'Contact', href: 'mailto:hello@forjatech.dev' },
+  { label: 'Contact', href: 'mailto:hello@forjatech.org' },
 ]
 
 function LinkColumn({ heading, links }) {
