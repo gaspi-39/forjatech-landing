@@ -4,9 +4,7 @@ import LegalModal from './legal/LegalModal'
 const YEAR = new Date().getFullYear()
 
 const CONNECT_LINKS = [
-  { label: 'Contacto', href: 'mailto:hello@forjatech.dev' },
-  { label: 'LinkedIn', href: '#' },
-  { label: 'GitHub', href: '#' },
+  { label: 'Contact', href: 'mailto:hello@forjatech.dev' },
 ]
 
 function LinkColumn({ heading, links }) {
@@ -42,8 +40,8 @@ export default function Footer() {
   const [modal, setModal] = useState(null)
 
   const LEGAL_LINKS = [
-    { label: 'Privacidad', onClick: () => setModal('privacy') },
-    { label: 'Términos', onClick: () => setModal('terms') },
+    { label: 'Privacy', onClick: () => setModal('privacy') },
+    { label: 'Terms', onClick: () => setModal('terms') },
   ]
 
   return (
