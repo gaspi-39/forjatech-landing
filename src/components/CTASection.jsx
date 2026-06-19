@@ -15,8 +15,7 @@ export default function CTASection() {
             Ready to forge?
           </h2>
           <p className="font-sans text-body-lg text-white/60">
-            Submit your blueprints and let's begin the heat cycle. Our intake for Q4 is now open
-            for mission-critical projects.
+            Submit your blueprints and let's begin the heat cycle.
           </p>
         </div>
         <a
