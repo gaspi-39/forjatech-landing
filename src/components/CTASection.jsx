@@ -19,7 +19,10 @@ export default function CTASection() {
             for mission-critical projects.
           </p>
         </div>
-        <a href="mailto:hello@forjatech.dev" className="btn-ember whitespace-nowrap">
+        <a
+          href="mailto:hello@forjatech.dev?subject=Consulta%20de%20Proyecto%20%E2%80%94%20ForjaTech&body=Hola%20ForjaTech%2C%0A%0AMe%20gustar%C3%ADa%20discutir%20un%20proyecto%20con%20el%20equipo.%0A%0ANombre%3A%20%0ADescripci%C3%B3n%20del%20proyecto%3A%20%0APlazos%20aproximados%3A%20%0APresupuesto%20estimado%3A%20"
+          className="btn-ember whitespace-nowrap"
+        >
           Start Building
         </a>
       </div>
