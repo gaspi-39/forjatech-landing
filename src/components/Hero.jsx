@@ -34,7 +34,7 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/40 animate-bounce">
-        <span className="material-symbols-outlined">expand_more</span>
+        <span translate="no" className="material-symbols-outlined">expand_more</span>
       </div>
     </header>
   )

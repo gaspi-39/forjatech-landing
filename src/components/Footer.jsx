@@ -3,10 +3,6 @@ import LegalModal from './legal/LegalModal'
 
 const YEAR = new Date().getFullYear()
 
-const CONNECT_LINKS = [
-  { label: 'Contact', href: 'mailto:hello@forjatech.org' },
-]
-
 function LinkColumn({ heading, links }) {
   return (
     <div className="flex flex-col gap-xs">
@@ -36,8 +32,12 @@ function LinkColumn({ heading, links }) {
   )
 }
 
-export default function Footer() {
+export default function Footer({ onContactOpen }) {
   const [modal, setModal] = useState(null)
+
+  const CONNECT_LINKS = [
+    { label: 'Contact', onClick: onContactOpen },
+  ]
 
   const LEGAL_LINKS = [
     { label: 'Privacy', onClick: () => setModal('privacy') },
@@ -50,7 +50,7 @@ export default function Footer() {
         <div className="max-w-screen-xl mx-auto px-margin py-xl flex flex-col md:flex-row justify-between items-start gap-lg">
           {/* Brand */}
           <div className="flex flex-col gap-sm">
-            <span className="font-serif text-xl font-bold tracking-tighter text-white">ForjaTech</span>
+            <span translate="no" className="font-serif text-xl font-bold tracking-tighter text-white">ForjaTech</span>
             <p className="font-sans text-body-md text-white/50 max-w-xs">
               Built to Last. High-performance software engineering for industrial-scale challenges.
             </p>

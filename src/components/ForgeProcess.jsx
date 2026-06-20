@@ -35,8 +35,8 @@ function StepCard({ number, icon, title, body, borderClass, delay = 0 }) {
       style={{ transitionDelay: `${delay}ms` }}
     >
       <div className="flex justify-between items-start mb-lg">
-        <span className="font-serif text-6xl font-bold text-primary/10 leading-none">{number}</span>
-        <span className="material-symbols-outlined text-primary" style={{ fontSize: '2.5rem' }}>
+        <span translate="no" className="font-serif text-6xl font-bold text-primary/10 leading-none">{number}</span>
+        <span translate="no" className="material-symbols-outlined text-primary" style={{ fontSize: '2.5rem' }}>
           {icon}
         </span>
       </div>
