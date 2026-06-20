@@ -47,8 +47,9 @@ function PrivacyContent() {
       <Section title="2. Datos que Recopilamos">
         <p>
           Recopilamos únicamente los datos que vos nos proporcionás de forma voluntaria al
-          contactarnos: nombre, dirección de correo electrónico y descripción del proyecto. No
-          recopilamos datos sensibles (Art. 2, Ley 25.326), ni datos de menores de 18 años.
+          contactarnos: nombre, dirección de correo electrónico y descripción del proyecto, son
+          procesados por Formspree y no seran almacenados en bases de datos propias de ForjaTech.
+          No recopilamos datos sensibles (Art. 2, Ley 25.326), ni datos de menores de 18 años. 
         </p>
       </Section>
 
@@ -62,7 +63,8 @@ function PrivacyContent() {
 
       <Section title="4. Conservación de Datos">
         <p>
-          Conservamos los datos durante el tiempo necesario para gestionar la relación comercial.
+          Conservamos los datos durante el tiempo necesario para gestionar la relación comercial, sin
+          almacenarlos en bases de datos propias de ForjaTech, solo los procesamos a través de Formspree.
           Finalizada ésta, se conservan por un plazo máximo de <strong className="text-white">cinco (5) años</strong>{' '}
           conforme al Art. 2560 del Código Civil y Comercial de la Nación, luego de lo cual son
           eliminados o anonimizados.
@@ -115,15 +117,7 @@ function PrivacyContent() {
         </p>
       </Section>
 
-      <Section title="10. Registro de Base de Datos">
-        <p>
-          En cumplimiento del Art. 21 de la Ley 25.326, ForjaTech procederá a inscribir su base de
-          datos de contactos comerciales ante el Registro Nacional de Bases de Datos (RNBD)
-          administrado por la AAIP.
-        </p>
-      </Section>
-
-      <Section title="11. Modificaciones">
+      <Section title="10. Modificaciones">
         <p>
           Podemos actualizar esta política ante cambios normativos o en nuestras prácticas. La
           fecha de vigencia indicada al inicio refleja la última actualización. El uso continuado
