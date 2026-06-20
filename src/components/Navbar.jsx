@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-background border-b-4 border-primary">
       <div className="max-w-screen-xl mx-auto px-margin py-md flex justify-between items-center">
-        <a href="#" className="font-serif text-xl font-bold tracking-tighter text-primary select-none">
+        <a href="#" translate="no" className="font-serif text-xl font-bold tracking-tighter text-primary select-none">
           ForjaTech
         </a>
 
@@ -42,7 +42,7 @@ export default function Navbar() {
           onClick={() => setMobileOpen((v) => !v)}
           aria-label="Toggle menu"
         >
-          <span className="material-symbols-outlined">{mobileOpen ? 'close' : 'menu'}</span>
+          <span translate="no" className="material-symbols-outlined">{mobileOpen ? 'close' : 'menu'}</span>
         </button>
       </div>
 

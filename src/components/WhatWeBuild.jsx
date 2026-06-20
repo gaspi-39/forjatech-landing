@@ -31,14 +31,14 @@ function PillarCard({ icon, tag, title, body, delay = 0 }) {
                  hover:bg-secondary-container transition-colors duration-200"
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <span className="material-symbols-outlined text-5xl text-primary">{icon}</span>
+      <span translate="no" className="material-symbols-outlined text-5xl text-primary">{icon}</span>
       <h3 className="font-serif font-semibold text-headline-md uppercase tracking-tighter">
         {title}
       </h3>
       <p className="font-sans text-body-md text-on-surface-variant flex-1">{body}</p>
       <div className="pt-md border-t border-primary/20 flex justify-between items-center">
         <span className="font-sans text-label uppercase tracking-widest text-primary/50">{tag}</span>
-        <span className="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+        <span translate="no" className="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity duration-200">
           arrow_forward
         </span>
       </div>
@@ -53,7 +53,7 @@ export default function WhatWeBuild() {
     <section id="what-we-build" className="py-xl px-margin bg-background">
       <div className="max-w-screen-xl mx-auto">
         <div ref={titleRef} className="reveal-on-scroll flex flex-col md:flex-row justify-between items-end mb-lg gap-md">
-          <h2 className="font-serif font-bold text-headline-lg text-5xl uppercase tracking-tight whitespace-nowrap">
+          <h2 className="font-serif font-bold text-headline-lg text-5xl uppercase tracking-tight">
             What We Build
           </h2>
           <div className="section-rule flex-1 ml-0 md:ml-lg" />
